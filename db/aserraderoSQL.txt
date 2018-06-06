@@ -1,0 +1,87 @@
+    CREATE TABLE Usuario (
+        id int NOT NULL AUTO_INCREMENT,
+        nombre varchar(255) NOT NULL,
+        apellido varchar(255) NOT NULL,
+        usuario varchar(255) NOT NULL, 
+        acceso varchar(355) NOT NULL, 
+        PRIMARY KEY (id)
+     );
+
+     CREATE TABLE Empleado(
+         curp varchar(255) NOT NULL,
+         nombre varchar(255) NOT NULL,
+         apellido varchar(255) NOT NULL,
+         salario float NOT NULL,
+         telefono int NOT NULL,
+         fechaIngreso DATE NOT NULL,
+         PRIMARY KEY (curp)
+     );
+
+     CREATE TABLE Madera(
+         longitud float NOT NULL,
+         especie varchar(255) NOT NULL, 
+         id int AUTO_INCREMENT NOT NUll,
+         PRIMARY KEY (id)
+     ); 
+      																																					 CREATE TABLE MaderaEnRollo(
+         maderaId int NOT NULL,
+         diametro float NOT NULL,
+         id int AUTO_INCREMENT NOT NULL,
+         FOREIGN KEY (maderaId) REFERENCES Madera(id), 
+         PRIMARY KEY(id)
+     );
+         
+     CREATE TABLE Escuadria(
+         maderaId int NOT NULL,
+         ancho float NOT NULL,
+         grueso float NOT NULL,
+         clasif varchar(255),
+         id int AUTO_INCREMENT NOT NULL,
+         FOREIGN KEY (maderaId) REFERENCES Madera(id),
+         PRIMARY KEY(id)
+     );
+     
+     CREATE TABLE RolloCantidad(
+         maderaRolloId int NOT NULL,
+         cantidad int NOT NULL,
+         id int AUTO_INCREMENT NOT NULL,
+         FOREIGN KEY (maderaRolloId) REFERENCES MaderaEnRollo(id),
+         PRIMARY KEY(id)
+     );
+     
+     CREATE TABLE ProductoTransformado(
+         escuadriaId int NOT NULL,
+         cantidad int NOT NULL,
+         fecha DATE NOT NULL,
+         id int AUTO_INCREMENT NOT NULL,
+         FOREIGN KEY (escuadriaId) REFERENCES Escuadria(id),
+         PRIMARY KEY(id)
+     );
+     
+     CREATE TABLE ProductoCantidad(
+         cantidad int NOT NULL,
+         escuadriaId int NOT NULL,
+         FOREIGN KEY (escuadriaId) REFERENCES Escuadria(id)
+     );
+    
+     CREATE TABLE RolloTransformado(
+         maderaRolloId int NOT NULL,
+         cantidad int NOT NULL,
+         fecha DATE NOT NULL,
+         id int AUTO_INCREMENT NOT NULL,
+         FOREIGN KEY (maderaRolloId) REFERENCES MaderaEnRollo(id),
+         PRIMARY KEY(id)
+     );
+     
+      CREATE TABLE Compra(
+         maderaRolloId int NOT NULL,
+         cantidad int NOT NULL,
+         fecha DATE NOT NULL,
+         ejido varchar(255) NOT NULL,
+         id int AUTO_INCREMENT NOT NULL,
+         FOREIGN KEY (maderaRolloId) REFERENCES MaderaEnRollo(id),
+         PRIMARY KEY(id)
+     );
+     
+     
+    
