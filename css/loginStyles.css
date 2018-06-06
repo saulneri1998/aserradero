@@ -1,0 +1,642 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+body{
+    color: white;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    background: url('../img/Background-Log.jpg');
+}
+form {
+    border: 1px solid #f1f1f1;
+}
+
+#imgLogo{
+    background-color:  rgba(198,57,24,1);
+    border-radius: 10px;
+}
+#logoImage{
+    margin: 0 auto; 
+    text-align: center;
+}
+#TempTitle{
+  padding: 10px;
+  margin top: 10px;
+  font-size: 60px;
+  text-align: center;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+#welcomeMenu{
+    margin: 20px auto;
+    text-align: center;
+    list-style-type: none;
+}
+
+#darkenBg{ 
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);  
+}
+#welcomeMenuList{
+     font-size: 36px;
+     padding: 5px;
+     list-style-type: none;
+}
+#welcomeMenuList li{
+    font-family: 'Open Sans', sans-serif;
+    list-style-type: none;
+    font-weight: 400;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #388E3C;
+    width: 80%;
+}
+
+#welcomeMenuList li a{
+    color: #FFFFFF;
+    text-decoration: none;
+    -webkit-transition: 0.3s; /* Safari */
+    transition: 0.3s;
+}
+
+#welcomeMenuList li a:hover{
+    color: orangered;
+}
+#TM{
+    font-size: 15px;
+    color: white;
+}
+#loginForm{
+    width: 50%;
+    margin: 0 auto;
+    border: none;
+    background-color: rgba(62,39,35,0.3);
+    border-radius: 10px;    
+    
+}
+#RegisterForm{
+    width: 50%;
+    margin: 0 auto;
+    border: none;
+    background-color: rgba(62,39,35,0.3);
+    background-color: none;
+}
+.fieldTitle{
+    width: 100%;
+    height: 20px;
+    font-size: 18px;
+}
+.Spacer30{
+    width: 100%;
+    height: 30px;
+}
+.Spacer50{
+    width: 100%;
+    height: 50px;
+}
+
+.Spacer100{
+    width: 100%;
+    height: 100px;
+}
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;  
+}
+
+:-ms-input-placeholder {  
+   text-align: center; 
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+button {
+    background-color: #388E3C;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.loginContainer{
+    text-align: center;
+    padding: 16px;
+    background-color: none;
+
+}
+
+.RegisterContainer{
+    text-align: center;
+    padding: 16px;
+    background-color: none;
+}
+
+input {
+    text-align: center;
+    margin: 0 auto; 
+}
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+#register{
+    color: white;
+    cursor: pointer;
+    font-size: 22px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.text{
+    width: 80px;
+    margin: 0 auto;
+    color: white;
+}
+
+#image2{
+    background: url('../img/Log.png');
+    width: 500px;
+    height: 322px;
+    z-index: 100;
+    float: right;
+    position: relative;
+    top: -75px;
+}
+#Toolbar{
+    width: 100%;
+    height: 48px;
+    background-color: rgba(62,39,35,0.3);
+}
+
+#ToolbarComplete{
+    width: 100%;
+    height: 48px; 
+    background-color: #388E3C;
+    margin-bottom: 30px; 
+    overflow: hidden;
+}
+
+#ToolbarMenu{
+    margin: 0 auto; 
+    width: 90%;
+    height: 100%;
+    list-style: none;
+}
+#ToolbarComplete #ToolbarMenu li {
+    font-size: 26px;
+    float: left;
+    line-height: 48px;
+    vertical-align:middle;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Open Sans', sans-serif;
+    list-style-type: none;
+    font-weight: 400;
+    
+}
+
+#ToolbarComplete #ToolbarMenu div {
+    font-size: 26px;
+    float: right;
+    line-height: 48px;
+    vertical-align:middle;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Open Sans', sans-serif;
+    list-style-type: none;
+    font-weight: 400;
+    
+}
+
+#ToolbarMenu li a{
+    color: #FFFFFF;
+    text-decoration: none;
+    -webkit-transition: 0.4s; /* Safari */
+    transition: 0.4s; 
+}
+
+#ToolbarMenu li a:hover{
+    color: white;
+    border-bottom: 1px solid orangered; 
+}
+#SubMenu li a:hover, #SubMenu2 li a:hover{
+    color: white;
+    background-color: orangered;
+    cursor: pointer;
+    border-bottom: none;
+}
+
+#SubMenu {
+    padding: 15px;
+    position: absolute;
+    background-color: #388E3C;
+    display: none;
+    height: auto;
+    width: 200px;
+}
+
+#SubMenu2{
+    padding: 15px;
+    position: absolute;
+    background-color: #388E3C;
+    display: none;
+    height: auto;
+    width: 320px;
+}
+
+#ToolbarMenu li:hover #SubMenu{
+    display: block;
+}
+
+#ToolbarMenu li:hover #SubMenu2{
+    display: block;
+}
+
+.iconImage{
+    height: 48px;
+    width: 48px;
+    background: url('../img/exit_icon.png');
+    float: left;
+}
+.iconImage:hover{
+    background-color: orangered;
+    border-radius: 15px;
+}
+#error-blanks{
+    display: none;
+}
+
+#error-repeat{
+    display: none;
+}
+
+#welcome_box{
+    text-align: center;
+    font-size: 32px;
+    color: white;
+}
+#failedMessage {
+    color: cyan;
+    font-style: bold;
+    font-size: 26px;
+    text-align: center;
+    background-color: rgba(10,10,10,0.8);
+    width: 50%;
+    margin: 0 auto;
+}
+.failedMessage {
+    color: cyan;
+    font-style: bold;
+    font-size: 26px;
+    text-align: center;
+    background-color: rgba(10,10,10,0.8);
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+
+/*********************Inventario**************************/
+#inventarioTabla {
+    margin: 40px auto;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+#inventarioTabla  td, #inventarioTabla  th {
+    border: 1px solid rgba(0,0,0,0.3);
+    padding: 8px;
+}
+
+#inventarioTabla  tr {transition: 0.1s;}
+#inventarioTabla  tr:hover {background-color: rgba(229, 73, 25,0.8);}
+
+#inventarioTabla  th {
+    
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #388E3C;
+    color: white;
+}
+
+#inventarioTabla  td {
+    text-align: left;
+}
+
+#inventarioTablaAcciones{
+    margin: 20px auto; 
+}
+
+.inventarioBotones{
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 40%;
+    background-color: #388E3C;
+    font-size: 24px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.inventarioBotones:hover{
+    color: white;
+    background-color: orangered;
+}
+
+/*********************Inventario**************************/
+/*********************EMPLEADOS**************************/
+#empleadosTabla {
+    margin: 40px auto;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+#empleadosTabla  td, #empleadosTabla  th {
+    border: 1px solid rgba(0,0,0,0.3);
+    padding: 8px;
+}
+
+#empleadosTabla  tr {transition: 0.1s;}
+#empleadosTabla  tr:hover {background-color: rgba(229, 73, 25,0.8);}
+
+#empleadosTabla  th {
+    
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #388E3C;
+    color: white;
+}
+
+#empleadosTabla  td {
+    text-align: left;
+}
+
+#empleadosTablaAcciones{
+    margin: 20px auto; 
+}
+
+.empleadosBotones{
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 40%;
+    background-color: #388E3C;
+    font-size: 24px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.empleadosBotones:hover{
+    color: white;
+    background-color: orangered;
+}
+/*********************EMPLEADOS**************************/
+
+input[type="submit"]{
+    padding:5px 15px; 
+    background:#388E3C; 
+    font-size: 24px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+/*********************REGISTRO MADERA**************************/
+
+#RegistrarMaderaForm{
+    width: 60%;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 24px;
+}
+
+#RegistrarMaderaForm input{
+    width: 400px;
+    text-align: center;
+    max-width: 400px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+#RegistrarMateriaPrimaForm{
+    width: 60%;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 24px;
+}
+
+#RegistrarMateriaPrimaForm input{
+    width: 400px;
+    text-align: center;
+    max-width: 400px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+#especiesMadera select{
+   border: 0;
+   text-align: center;
+   color: rgba(0,0,0,1);
+   background: transparent;
+    font-family: "Open Sans";
+   font-size: 24px;
+   padding: 2px 10px;
+   width: 400px;
+   *width: 400px;
+   *background: #58B14C;
+   -webkit-appearance: none;
+}
+#especiesMadera {
+    margin: 0 auto;
+    text-align:center;
+    overflow:hidden;
+    width:400px;
+    max-width: 400px;
+   -moz-border-radius: 9px 9px 9px 9px;
+   -webkit-border-radius: 2px 2px 2px 2px;
+   border-radius: 2px 2px 2px 2px;
+   box-shadow: 1px 1px 11px #330033;
+   background: #fff url("http://i62.tinypic.com/15xvbd5.png") no-repeat scroll 360px center;
+}
+/*********************REGISTRO MADERA**************************/
+
+
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    #image{
+        display: none;
+    }
+}
+
+#sal {
+   color: #FFFFFF;
+    text-decoration: none;
+    -webkit-transition: 0.4s; /* Safari */
+    transition: 0.4s;  
+}
+
+
+#FiltrarEscuadriasForm{
+    width: 90%;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 24px;
+}
+
+#FiltrarEscuadriasForm input{
+    width: 400px;
+    text-align: center;
+    max-width: 400px;
+    height: 40px;
+    margin: 0 auto;
+}
